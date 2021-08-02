@@ -1,0 +1,27 @@
+# eureka注册中心服务的配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:10002/eureka
+
+logging:
+  config: classpath:logback.xml
+
+web:
+  cookie:
+    domain: huajinsc.cn
+    openTokenKey: openToken
+    openPhoneAuthTokenKey: openPhoneAuthToken
+    openAccountAuthTokenKey: openAccountAuthToken
+    openAccountLoginHistoryKey: openAccountLoginHistory
+    openAdapterJsUrlKey: openAdapterJsUrl
+    openThemeNameKey: openThemeName
+    openTradeModeKey: openTradeMode
+    openTopBarHiddenKey: openTopBarHidden
+  url:
+    opWebUrl:  https://dev-open.huajinsc.cn
+    opWebAuthUrl:  ${web.url.opWebUrl}/auth
+    opWebFrontUrl:  ${web.url.opWebUrl}/front
+    openAccountUrl:  https://dev-openaccount.huajinsc.cn:16002/huajin-open-hvue/views/index.html?source=kfpt&op_tk_moduleName=open
+agreement:
+  agreementConfigNo: privacy_policy_xiaomi

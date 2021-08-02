@@ -1,0 +1,14 @@
+# 服务端口名
+server:
+  port: 10301
+spring:
+  application:
+    name: op-auth-center-web
+  jackson:
+    default-property-inclusion: NON_NULL
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+  profiles:
+    active: ${cluster_tag}
